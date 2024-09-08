@@ -154,7 +154,7 @@ body {
 body {
   margin: 0;
   overflow: hidden; /* Ensure the fly doesn't scroll out of view */
-  background-color: #f0f0f0; /* Light background for contrast */
+ 
 }
 
 .fly {
@@ -189,6 +189,70 @@ body {
 
 
 
+
+.left-leg, .right-leg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: linear-gradient(#11c22e 85%, #2e7433 100%);
+  width: 50px;
+  height: 150px;
+  border: 1px solid #000;
+  border-radius: 35%;
+  z-index: 1;
+}
+
+.left-leg {
+  left: -60px; /* Adjust to be left of frog-body */
+  transform: rotate(-15deg);
+}
+
+.right-leg {
+  right: -60px; /* Adjust to be right of frog-body */
+  transform: rotate(15deg);
+}
+
+
+.left-leg .right-leg {
+  position: absolute;
+  top: -200px;
+  width: 60px;
+  height: 100px;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 50%;
+  z-index: 1;
+}
+.left-leg {
+  position: absolute;
+  left: 550px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: linear-gradient(#11c22e 85%, #2e7433 100%);
+  width: 50px;
+  height: 150px;
+  border: 1px solid #000;
+  border-radius: 35%;
+  transform: rotate(-15deg);
+  
+}
+
+.right-leg {
+ 
+  right: 550px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: linear-gradient(#11c22e 85%, #2e7433 100%);
+  width: 50px;
+  height: 150px;
+  border: 1px solid #000;
+  border-radius: 35%;
+  transform: rotate(15deg);
+  z-index: 1;
+}
 
  /* .frog-left-eye {
   position: absolute;
